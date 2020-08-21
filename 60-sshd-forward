@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+sed -i 's/#AllowAgentForwarding yes/AllowAgentForwarding yes/' /etc/ssh/sshd_config
+sed -i 's/X11Forwarding no/X11Forwarding yes/' /etc/ssh/sshd_config
